@@ -1,6 +1,12 @@
 # Enter your code here. Read input from STDIN. Print output to STDOUT
-n, m = input().split()  # integers n and m separated by a space.
-arr = input()  # n integers, the elements of array
-A = set(input().split())  # m integers in set A
-B = set(input().split())  # m integers in set B
-print(sum([(i in A) - (i in B) for i in arr]))
+n, m = map(int,input().split())
+arr = input().split(' ')
+A = set(input().split(' '))
+B = set(input().split(' '))
+happiness = 0
+for i in arr:
+    if i in A:
+        happiness += 1
+    if i in B:
+        happiness -= 1
+print(happiness)
