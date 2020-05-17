@@ -1,0 +1,11 @@
+t = int(input())
+
+for i in range(t):
+    a1 = int(input())
+    a2 = set(map(int, input().split()))
+    b1 = int(input())
+    b2 = set(map(int, input().split()))
+    if b2 == b2.union(a2):
+        print(True)
+    else:
+        print(False)
