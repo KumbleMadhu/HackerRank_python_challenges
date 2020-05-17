@@ -1,0 +1,4 @@
+k = int(input())
+arr = list(map(int, input().split()))
+x = set(arr)
+print(((sum(x)*k)-(sum(arr)))//(k-1))
